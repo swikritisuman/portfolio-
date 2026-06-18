@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swikriti Suman - Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <img src="assets\images\logo.jpg" alt="Logo" id="splash-logo">
+  </div>
+
+  <div class="stars-wrapper"></div>
+  <button id="mute-btn" class="voice-toggle">🔊</button>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">
+      <h1>Portfolio</h1>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar" id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Swikriti Suman</h1>
+      <h3>And I'm a <span id="typed-role"></span><span class="cursor">|</span></h3>
+      <p>Final-year CS engineer building full-stack apps, AI tools.<br>
+         Solving real problems using Web Technologies.</p>
+      <div class="home-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="assets\SwikritiSuman.pdf" download class="btn-outline">Download CV</a>
+      </div>
+    </div>
+    <div class="home-img swikimg">
+      <div class="glow-border">
+        <img src="assets\images\profileimg1.jpg" alt="Swikriti Suman" class="profile-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-container" id="about">
+    <div class="about-text fade-in">
+      <h2>About Me</h2>
+      <p>Hi! I'm <strong>Swikriti Suman</strong>, a passionate and detail-oriented Computer Science Engineering graduate
+        from JIS University. I love building meaningful and user-friendly digital solutions through web development,
+        software engineering, and data analysis.</p>
+      <p>With hands-on experience in real-world projects — from AI-powered assistants  and
+        food allergen detection system — I enjoy applying my technical skills to solve real-time challenges.</p>
+      <p>I'm always eager to explore new technologies, collaborate with like-minded creators, and grow through
+        feedback and learning. My goal is to contribute to innovative solutions that make a real impact.</p>
+    </div>
+    <div class="about-image fade-in">
+      <img src="assets\images\profileimg2.jpg" alt="Swikriti Suman" />
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <h3>JIS University, <span>Kolkata, India</span></h3>
+      <p>B.Tech in Computer Science and Engineering — <strong>CGPA: 8.70</strong></p>
+      <span class="edu-date">2022 – 2026</span>
+    </div>
+    <div class="edu-item">
+      <h3>Banasthali Vidyapith, <span>Jaipur, India</span></h3>
+      <p>Higher Secondary XII (Science) — <strong>93%</strong></p>
+      <span class="edu-date">2019 – 2021</span>
+    </div>
+    <div class="edu-item">
+      <h3>Ganga Global School, <span>Begusarai, India</span></h3>
+      <p>Secondary X — <strong>87%</strong></p>
+      <span class="edu-date">2018 – 2019</span>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h2>My Skills</h2>
+  <p>Technologies and tools I work with, across web development and AI/ML.</p>
+
+  <div class="skills-columns">
+
+    <!-- LEFT: Web Dev -->
+    <div class="skills-col">
+      <h3 class="skills-col-title"><span class="dot dot-web"></span> Web Development</h3>
+
+      <div class="skill-group">
+        <p class="skill-group-label">Languages & Markup</p>
+        <div class="skills-grid">
+          <div class="skill-card web-card"><span class="skill-emoji">🌐</span><span>HTML5</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🎨</span><span>CSS3</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">⚙️</span><span>JavaScript</span></div>
+          
+          <div class="skill-card web-card"><span class="skill-emoji">🔷</span><span>C#</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🗄️</span><span>SQL</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group-label">Frameworks & Libraries</p>
+        <div class="skills-grid">
+          <div class="skill-card web-card"><span class="skill-emoji">⚛️</span><span>ReactJS</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🅱️</span><span>Bootstrap</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🧪</span><span>Flask</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">⚡</span><span>Node.js</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🚂</span><span>Express.js</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🔌</span><span>FastAPI</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🔩</span><span>.NET</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group-label">Databases & Tools</p>
+        <div class="skills-grid">
+          <div class="skill-card web-card"><span class="skill-emoji">🍃</span><span>MongoDB</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🐬</span><span>MySQL</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🐙</span><span>Git & GitHub</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">🖊️</span><span>Figma</span></div>
+          <div class="skill-card web-card"><span class="skill-emoji">📮</span><span>Postman</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: AI / ML -->
+    <div class="skills-col skills-col-ai">
+      <h3 class="skills-col-title"><span class="dot dot-ai"></span> AI / ML</h3>
+
+      <div class="skill-group">
+        <p class="skill-group-label">Languages & Core CS</p>
+        <div class="skills-grid">
+          <div class="skill-card ai-card"><span class="skill-emoji">🐍</span><span>Python</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">➕</span><span>C++</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">☕</span><span>Java</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">📊</span><span>DSA</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">🧠</span><span>OOP</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">🌐</span><span>Computer Networks</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">🔄</span><span>SDLC</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group-label">AI / ML Techniques</p>
+        <div class="skills-grid">
+          <div class="skill-card ai-card"><span class="skill-emoji">🤖</span><span>LLM APIs</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">✍️</span><span>Prompt Engineering</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">💎</span><span>Gemini API</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">📈</span><span>Model Training</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">🔧</span><span>Dataset Analysis</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">📝</span><span>Data Annotation</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group-label">Tools & Platforms</p>
+        <div class="skills-grid">
+          <div class="skill-card ai-card"><span class="skill-emoji">📓</span><span>Jupyter Notebook</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">🤝</span><span>GitHub Copilot</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">🖥️</span><span>VS Code</span></div>
+          <div class="skill-card ai-card"><span class="skill-emoji">🏷️</span><span>CVAT</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <h2>Experience</h2>
+    <div class="exp-timeline">
+
+      <div class="exp-card">
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <h3>Gen AI Data Annotator Intern</h3>
+            <span class="exp-date">Jan 2026 – Apr 2026</span>
+          </div>
+          <p class="exp-company">iMerit (via RTNS)</p>
+          <ul>
+            <li>Performed high-quality annotation for Generative AI and LLM training datasets</li>
+            <li>Reviewed and labeled text, image, and conversational data to reduce model hallucination</li>
+            <li>Collaborated with cross-functional teams to meet annotation quality benchmarks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <h3>AI/ML Intern</h3>
+            <span class="exp-date">2024</span>
+          </div>
+          <p class="exp-company">Eduskills (AICTE & IBM)</p>
+          <ul>
+            <li>Performed data preprocessing and feature engineering on structured datasets</li>
+            <li>Built and evaluated predictive ML models with software engineering best practices</li>
+            <li>Documented model performance and contributed to project reporting</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="ptag">Python</span><span class="ptag">FastAPI</span><span class="ptag">React</span><span class="ptag">Gemini API</span>
+        </div>
+        <h3 class="project-title">PurePlate – AI Food Allergen Detection</h3>
+        <p>Full-stack web app using LLM APIs to detect ingredients from food images, helping users with dietary restrictions. Achieved 90%+ accuracy with JWT auth and RESTful APIs.</p>
+        <a href="https://github.com/swikritisuman/PUREPLATE-KNOW-WHAT-YOU-EAT" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="ptag">Python</span><span class="ptag">FastAPI</span><span class="ptag">LLaMA 3</span><span class="ptag">RAG</span>
+        </div>
+        <h3 class="project-title">Joya – AI Personal Assistant (RAG)</h3>
+        <p>RAG-based AI assistant with contextual document Q&A, vector embeddings, and SSE streaming. Reduced API response latency by 30% through prompt engineering.</p>
+        <a href="https://github.com/swikritisuman/Joya" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">Node.js</span><span class="ptag">MongoDB</span>
+        </div>
+        <h3 class="project-title">CropSet – Contract Farming Platform</h3>
+        <p>Web app connecting farmers and buyers for secure, transparent contract farming with real-time communication and agreement management.</p>
+        <a href="https://github.com/swikritisuman/Krishajya-Dravya" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="ptag">Python</span><span class="ptag">ML</span><span class="ptag">Scikit-learn</span>
+        </div>
+        <h3 class="project-title">Ankur AI- Crop Recommendation System</h3>
+        <p>ML model that predicts the best crop to grow based on temperature, humidity, rainfall, and soil data — helping farmers make data-driven decisions.</p>
+        <a href="https://github.com/swikritisuman/Krishajya-Dravya" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>&nbsp;&nbsp;
+        <a href="https://ankur-ai.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        
+      </div>
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="ptag">Python</span><span class="ptag">ML</span><span class="ptag">Regression</span>
+        </div>
+        <h3 class="project-title">Employee Salary Prediction</h3>
+        <p>Predictive ML model that estimates employee salary based on experience, role, and department using regression algorithms with feature engineering.</p>
+        <a href="https://github.com/swikritisuman/Emplyee-salary-prediction" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>&nbsp;&nbsp;
+        <a href="https://swikritisuman-emplyee-salary-prediction-app-lxq6jh.streamlit.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="ptag">Python</span><span class="ptag">SK Learn</span><span class="ptag">Naive Bayes</span>
+        </div>
+        <h3 class="project-title">Email Spam Detector</h3>
+        <p>Email Spam Detection System Built using Machine Learning (Naive Bayes). Enter any message below and the system will classify it as Spam or Not Spam.</p>
+        <a href="https://github.com/swikritisuman/Email-Spam-Detector" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="ptag">React</span><span class="ptag">MongoDB</span><span class="ptag">Node.JS</span>
+        </div>
+        <h3 class="project-title">DUMBLE-Gym Website</h3>
+        <p>Responsive gym landing page with class schedules, trainer profiles, membership plans, and a contact form. Clean UI with smooth animations.</p>
+        <a href="https://github.com/swikritisuman/DUMBLE--A-gym-weebsite" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span>
+        </div>
+        <h3 class="project-title">Portfolio Website</h3>
+        <p>Responsive personal portfolio showcasing skills, projects, and resume with custom animations, star effects, and voice welcome message.</p>
+        <a href="https://github.com/swikritisuman/portfolio-" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>&nbsp;&nbsp;
+        <a href="https://swikritisumanportfolio.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Research Paper Section -->
+  <section id="research" class="research-section">
+    <h2>Research Paper</h2>
+    <div class="research-card">
+      <div class="research-badge">📄 Best Paper Award — ICDEC 2025</div>
+      <h3 class="research-title">
+        Krishi Dravya: An Artificial Intelligence based Application for Sustainability in Agriculture
+      </h3>
+      <p class="research-conference">
+        🏛️ 4th International Conference on Data, Electronics and Computing (ICDEC 2025) &nbsp;·&nbsp; Jabalpur, India
+      </p>
+      <div class="research-award">🏆 Best Paper Award</div>
+      <p class="research-desc">
+        An AI-powered application promoting sustainable farming by leveraging machine learning to recommend 
+        optimal crops, fertilizers, and interventions based on soil, climate, and environmental data.
+      </p>
+      <div class="research-tags">
+        <span class="rtag">Artificial Intelligence</span>
+        <span class="rtag">Agriculture</span>
+        <span class="rtag">Sustainability</span>
+        <span class="rtag">Machine Learning</span>
+        <span class="rtag">ICDEC 2025</span>
+      </div>
+      <!-- Replace with your paper image when available:
+      <img src="images/paper_preview.jpg" class="research-img" alt="Paper Preview" /> -->
+      <a href="https://drive.google.com/file/d/1a64u1EgQfZJr5M6NKHPrN0Ojp7Gl6-7u/view?usp=sharing" target="_blank" class="research-link">
+        📌 Click here to view the paper
+    </a>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements-section">
+    <h2>Achievements & Certifications</h2>
+    <div class="achievements-grid">
+
+      <div class="ach-card ach-gold">
+        <div class="ach-icon">🏆</div>
+        <h3>Best Paper Award</h3>
+        <p>4th International Conference on Data, Electronics and Computing (ICDEC 2025), Jabalpur, India</p>
+      </div>
+
+      <div class="ach-card ach-cyan">
+        <div class="ach-icon">💡</div>
+        <h3>Team Lead — Smart India Hackathon 2024</h3>
+        <p>Led team at the internal level of SIH 2024, one of India's largest hackathons.</p>
+      </div>
+
+      <div class="ach-card ach-cyan">
+        <div class="ach-icon">👩‍💻</div>
+        <h3>Frontend Developer — Hack4Bengal 2025</h3>
+        <p>Represented as frontend developer at Hack4Bengal, a major Bengal-based hackathon.</p>
+      </div>
+
+      <div class="ach-card ach-purple">
+        <div class="ach-icon">📜</div>
+        <h3>Introduction to Artificial Intelligence</h3>
+        <p>Certified by IBM</p>
+      </div>
+
+      <div class="ach-card ach-purple">
+        <div class="ach-icon">🤝</div>
+        <h3>GitHub Copilot Fundamentals</h3>
+        <p>Certified by Microsoft Learn</p>
+      </div>
+
+      <div class="ach-card ach-leetcode">
+        <div class="ach-icon">🧩</div>
+        <h3>LeetCode — 172 Problems Solved</h3>
+        <p>Consistent DSA practice across arrays, trees, graphs, dynamic programming and more.</p>
+        <div class="leetcode-card-wrapper">
+          <!-- Replace "swikritisuman" below with your actual LeetCode username -->
+          <img
+            src="https://leetcard.vercel.app/https://www.linkedin.com/in/swikriti-suman-27b549226/?theme=dark&font=baloo&extension=activity"
+            alt="LeetCode Stats"
+            class="leetcode-stats-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <p class="lc-error" style="display:none;">⚠️ Update the LeetCode username in index.html</p>
+        </div>
+        <a href="https://leetcode.com/swikritisuman" target="_blank" class="lc-link">View LeetCode Profile ↗</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to drop a message below<br>or reach out through my social handles.</p>
+
+    <div class="icon-row">
+      <a href="mailto:swikritis.cse.jisu22@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/swikriti-suman-27b549226/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/swikritisuman" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+
+    <form id="contact-form" action="https://formspree.io/f/manjpoeo" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="glow-btn">Send Message</button>
+    </form>
+    <p id="form-status" style="margin-top: 20px; color: #00ff00;"></p>
+  </section>
+
+  <!-- Floating Resume Button -->
+  <a href="SwikritiSuman_Resume.pdf" download class="floating-resume-btn" title="Download My Resume">📄</a>
+
+  <script src="script.js"></script>
+  <script src="form.handler.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      const splash = document.getElementById('splash-screen');
+      setTimeout(() => {
+        splash.style.opacity = 0;
+        setTimeout(() => splash.style.display = 'none', 1000);
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
